@@ -49,14 +49,12 @@
 
 .primary {
   background: var(--color-primary);
-  box-shadow: 3px 3px 0 0 var(--brand-cyan);
 }
 
 .primary:hover,
 .primary:focus,
 .primary:active {
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0 0 var(--brand-cyan);
+  background: var(--color-menu-hover);
 }
 
 .ghost,
@@ -68,20 +66,13 @@
 }
 
 .outline {
-  background: linear-gradient(
-    to right,
-    var(--color-primary) 50%,
-    var(--brand-white) 50%
-  );
-  /* 202% used to fix a Firefox specific behavior not moving the background as expected */
-  background-size: 202% 100%;
-  background-position: bottom right;
+  background: var(--brand-white);
   border: var(--border-size) solid var(--color-primary);
   color: var(--color-primary);
 }
 
 .outline:hover {
-  background-position: bottom left;
+  background: var(--color-primary);
   color: var(--brand-white);
 }
 
