@@ -15,10 +15,13 @@
 
 .section h3 {
   font-size: var(--font-size-large);
-  color: var(--color-secondary);
 }
 
 .section [class*='button'],
 .allAssetsButton {
   margin-top: var(--spacer);
+}
+
+.bannerWrapper {
+  background-color: var(--color-black);
 }
