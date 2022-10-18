@@ -114,12 +114,11 @@
 }
 
 .actions,
-.link:hover,
-.link:focus,
-.active {
+.link:hover {
   color: var(--brand-white);
 }
 
+.active,
 .active[aria-current],
 .link[aria-current]:hover,
 .link[aria-current]:focus {
