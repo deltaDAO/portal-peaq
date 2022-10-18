@@ -252,9 +252,6 @@ export default function HomePage(): ReactElement {
             ))}
           </div>
         </Container>
-        <section className={styles.intro}>
-          <HomeIntro />
-        </section>
         <section className={styles.content}>
           <HomeContent />
         </section>

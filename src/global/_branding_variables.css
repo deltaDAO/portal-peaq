@@ -6,11 +6,13 @@
   --brand-violet: #b900ff;
   --brand-cyan: #00ffff;
 
-  --brand-black: #000046;
+  --color-black: #1f2123;
 
-  --color-primary: #000094;
+  --color-primary: #6666ff;
 
-  --color-menu-active: #465aff;
+  --color-menu: #ffffffb3;
+  --color-menu-active: var(--color-primary);
+  --color-menu-hover: #4f4caa;
   --border-color-menu: var(--color-primary);
   --border-radius-menu: 2px;
 
@@ -42,6 +44,8 @@
   --brand-grey-light: #c6ceef;
   --brand-grey-lighter: #d4d4e2;
   --brand-grey-dimmed: #f1f3f8;
+
+  --font-color-heading: var(--color-black);
 
   --font-family-base: 'Titillium Web', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Helvetica, Arial, sans-serif;

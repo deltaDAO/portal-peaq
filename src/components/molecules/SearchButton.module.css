@@ -3,9 +3,9 @@
 }
 
 .button {
-  color: var(--color-secondary);
+  color: var(--color-menu);
   cursor: pointer;
-  background: var(--background-content);
+  background: none;
   border: none;
   box-shadow: none;
   padding: calc(var(--spacer) / 4);
@@ -24,8 +24,12 @@
 }
 
 .searchIcon {
-  fill: var(--color-primary);
+  fill: var(--color-menu);
   transition: 0.2s ease-out;
   width: var(--font-size-base);
   height: var(--font-size-base);
+}
+
+.button:hover .searchIcon {
+  fill: var(--brand-white);
 }
