@@ -41,6 +41,7 @@
 .bookmarksButton {
   padding: 0;
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 .profileButton:hover,

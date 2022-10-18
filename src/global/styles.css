@@ -38,8 +38,8 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: var(--brand-pink);
+  text-decoration: underline;
+  color: var(--color-primary);
   transition: 0.2s ease-out;
 }
 
