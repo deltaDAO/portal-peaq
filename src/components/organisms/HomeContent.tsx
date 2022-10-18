@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Markdown from '../atoms/Markdown'
 import styles from './HomeContent.module.css'
@@ -25,8 +25,6 @@ const query = graphql`
               paragraphs {
                 title
                 body
-                cta
-                ctaTo
                 image {
                   childImageSharp {
                     original {
@@ -55,8 +53,8 @@ interface HomeContentData {
             paragraphs: {
               title: string
               body: string
-              cta: string
-              ctaTo: string
+              cta?: string
+              ctaTo?: string
               image: { childImageSharp: { original: { src: string } } }
             }[]
           }
@@ -97,14 +95,16 @@ export default function HomeContent(): ReactElement {
               <div className={styles.content}>
                 <h2>{paragraph.title}</h2>
                 <Markdown text={paragraph.body} />
-                <Button
-                  href={paragraph.ctaTo}
-                  style="primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {paragraph.cta}
-                </Button>
+                {paragraph?.cta && (
+                  <Button
+                    href={paragraph.ctaTo}
+                    style="primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {paragraph.cta}
+                  </Button>
+                )}
               </div>
             </div>
           ))}

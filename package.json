@@ -1,9 +1,9 @@
 {
-  "name": "@deltaDAO/mvg-portal",
-  "description": "Pontus-X - Gaia-X Web3 Ecosystem",
+  "name": "@deltaDAO/peaq-portal",
+  "description": "Peaq portal - Gaia-X Web3 Ecosystem",
   "version": "1.1.0",
   "license": "Apache-2.0",
-  "homepage": "https://portal.minimal-gaia-x.eu",
+  "homepage": "https://peaq.portal.minimal-gaia-x.eu",
   "scripts": {
     "start": "gatsby develop --host 0.0.0.0",
     "build": "gatsby build && cp _redirects public/_redirects",

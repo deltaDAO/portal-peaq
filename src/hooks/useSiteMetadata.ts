@@ -73,10 +73,6 @@ const query = graphql`
         menu {
           name
           link
-          subItems {
-            name
-            link
-          }
         }
         warning {
           main
