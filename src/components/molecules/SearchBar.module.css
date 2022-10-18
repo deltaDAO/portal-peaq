@@ -70,7 +70,7 @@
 .visibleInput {
   background-color: var(--background-content);
   border: var(--border-size) solid var(--brand-grey-light);
-  border-radius: var(--border-radius-menu);
+  border-radius: var(--border-radius);
   cursor: text;
   max-width: 100%;
 }

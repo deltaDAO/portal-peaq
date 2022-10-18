@@ -17,6 +17,8 @@
   --border-color-menu: var(--color-primary);
   --border-radius-menu: 2px;
 
+  --card-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+
   --brand-gradient: linear-gradient(
     to right bottom,
     var(--color-primary),

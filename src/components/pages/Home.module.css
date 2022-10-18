@@ -20,6 +20,7 @@
 .section [class*='button'],
 .allAssetsButton {
   margin-top: var(--spacer);
+  text-decoration: none;
 }
 
 .bannerWrapper {

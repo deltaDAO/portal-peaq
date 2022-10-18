@@ -232,7 +232,6 @@ export default function HomePage(): ReactElement {
             className={styles.allAssetsButton}
             style="text"
             to="/search?sort=created&sortOrder=desc"
-            arrow
           >
             All data sets and algorithms
           </Button>
