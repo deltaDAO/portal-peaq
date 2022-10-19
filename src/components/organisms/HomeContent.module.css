@@ -33,7 +33,8 @@
 }
 
 .content {
-  padding: var(--spacer);
+  padding: var(--spacer) 0;
+  text-align: justify;
 }
 
 .content button,
