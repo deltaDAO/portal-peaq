@@ -5,6 +5,8 @@ import AssetTitle from '../../../molecules/AssetListTitle'
 import NetworkName from '../../../atoms/NetworkName'
 import { useProfile } from '../../../../providers/Profile'
 import { DownloadedAsset } from '../../../../models/aquarius/DownloadedAsset'
+import styles from './Download.module.css'
+
 const columns = [
   {
     name: 'Data Set',
@@ -15,7 +17,9 @@ const columns = [
   {
     name: 'Network',
     selector: function getNetwork(row: DownloadedAsset) {
-      return <NetworkName networkId={row.networkId} />
+      return (
+        <NetworkName networkId={row.networkId} className={styles.networkName} />
+      )
     }
   },
   {
