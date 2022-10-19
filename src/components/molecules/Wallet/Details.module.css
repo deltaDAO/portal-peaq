@@ -62,6 +62,7 @@
 
 .walletLogoWrap {
   display: block;
+  color: var(--font-color-text);
 }
 
 .actions p {
