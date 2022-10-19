@@ -36,7 +36,9 @@ const columns = [
   {
     name: 'Network',
     selector: function getNetwork(row: ComputeJobMetaData) {
-      return <NetworkName networkId={row.networkId} />
+      return (
+        <NetworkName networkId={row.networkId} className={styles.networkName} />
+      )
     }
   },
   {
