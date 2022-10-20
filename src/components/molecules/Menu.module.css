@@ -119,6 +119,7 @@
 }
 
 .active,
+.active:hover,
 .active[aria-current],
 .link[aria-current]:hover,
 .link[aria-current]:focus {
