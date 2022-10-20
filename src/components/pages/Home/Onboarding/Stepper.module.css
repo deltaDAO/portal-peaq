@@ -84,7 +84,7 @@
   transition-delay: 0s;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 50rem) {
   .title {
     display: block;
   }
