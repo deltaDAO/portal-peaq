@@ -15,6 +15,7 @@
 
 .row {
   composes: row from './FormFields/AssetSelection.module.css';
+  text-decoration: none;
 }
 
 .row:last-child {
