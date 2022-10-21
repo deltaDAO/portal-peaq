@@ -20,7 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-secondary);
+  color: var(--font-color-base);
+  text-decoration: none;
 }
 
 li:first-child .number,
@@ -43,7 +44,7 @@ li:last-child .number {
 }
 
 .number:hover {
-  color: var(--brand-pink);
+  color: var(--color-primary);
 }
 
 .current,
@@ -62,7 +63,8 @@ li:last-child .number {
 .current:hover,
 .current:focus,
 .current:active {
-  color: var(--text-color);
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 .next {

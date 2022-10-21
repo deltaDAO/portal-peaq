@@ -1,8 +1,8 @@
 {
   "site": {
-    "siteTitle": "Pontus-X - Gaia-X Web3 Ecosystem",
-    "siteTagline": "A platform to find, publish and consume Service Offerings in the Gaia-X Test Network.",
-    "siteUrl": "https://portal.minimal-gaia-x.eu",
+    "siteTitle": "peaq Gaia-X Portal",
+    "siteTagline": "Publish and monetize your peaq network data.",
+    "siteUrl": "https://peaq.portal.minimal-gaia-x.eu",
     "siteIcon": "./src/images/siteIcon.png",
     "siteImage": "../src/images/share.png",
     "copyright": "All Rights Reserved. Powered by [Ocean Protocol](https://oceanprotocol.com). Built by [deltaDAO](https://delta-dao.com).",
@@ -18,23 +18,6 @@
       {
         "name": "Verify",
         "link": "/verify"
-      },
-      {
-        "name": "Ecosystem",
-        "subItems": [
-          {
-            "name": "EuProGigant",
-            "link": "https://euprogigant.portal.minimal-gaia-x.eu"
-          },
-          {
-            "name": "moveID",
-            "link": "https://portal.moveid.eu"
-          },
-          {
-            "name": "Future Mobility",
-            "link": "https://marketplace.future-mobility-alliance.org"
-          }
-        ]
       }
     ],
     "warning": {
