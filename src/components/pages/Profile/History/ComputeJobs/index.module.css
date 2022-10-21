@@ -1,6 +1,5 @@
 .status {
   text-transform: uppercase;
-  color: var(--color-secondary);
 }
 
 .computeTableContainer {
@@ -23,4 +22,8 @@
   height: 1em;
   margin-right: calc(var(--spacer) / 6);
   margin-bottom: -0.1rem;
+}
+
+.networkName {
+  color: var(--color-black);
 }

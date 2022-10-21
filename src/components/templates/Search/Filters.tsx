@@ -11,6 +11,7 @@ import {
   Filters
 } from '../../../models/SortAndFilters'
 import queryString from 'query-string'
+import { allowThingType } from '../../../../app.config'
 
 const cx = classNames.bind(styles)
 
@@ -18,9 +19,14 @@ const clearFilters = [{ display: 'Clear', value: '' }]
 
 const serviceFilterItems = [
   { display: 'data sets', value: FilterByTypeOptions.Data },
-  { display: 'algorithms', value: FilterByTypeOptions.Algorithm },
-  { display: 'edge devices', value: FilterByTypeOptions.Edge }
+  { display: 'algorithms', value: FilterByTypeOptions.Algorithm }
 ]
+
+allowThingType === 'true' &&
+  serviceFilterItems.push({
+    display: 'edge devices',
+    value: FilterByTypeOptions.Edge
+  })
 
 const accessFilterItems = [
   { display: 'download ', value: FilterByAccessOptions.Download },

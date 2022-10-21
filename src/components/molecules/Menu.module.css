@@ -1,3 +1,7 @@
+.wrapper {
+  background-color: var(--color-black);
+}
+
 .menu {
   width: 100%;
   padding: calc(var(--spacer) / 2);
@@ -101,42 +105,25 @@
 .link {
   display: block;
   padding: calc(var(--spacer) / 4);
-  color: var(--color-primary);
+  color: var(--color-menu);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-base);
+  text-decoration: none;
   position: relative;
   z-index: 1;
 }
 
-.link:after {
-  content: '';
-  position: absolute;
-  background-color: var(--color-primary);
-  height: 2px;
-  left: 1px;
-  right: 1px;
-  bottom: 0;
-  transform-origin: 0 50%;
-  transform: scaleX(0);
-  transition: transform 0.2s;
-}
-
-.link:hover:after,
-.active:after {
-  transform: scaleX(1);
-}
-
 .actions,
-.link:hover,
-.link:focus,
-.active {
-  color: var(--color-menu-active);
+.link:hover {
+  color: var(--brand-white);
 }
 
+.active,
+.active:hover,
 .active[aria-current],
 .link[aria-current]:hover,
 .link[aria-current]:focus {
-  color: var(--font-color-heading);
+  color: var(--color-menu-active);
 }
 
 .actions button {

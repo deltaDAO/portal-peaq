@@ -9,7 +9,11 @@ import { AssetSelectionAsset } from '../components/molecules/FormFields/AssetSel
 import { PriceList, getAssetsPriceList } from './subgraph'
 import axios, { CancelToken, AxiosResponse } from 'axios'
 import { OrdersData_tokenOrders as OrdersData } from '../@types/apollo/OrdersData'
-import { metadataCacheUri, allowDynamicPricing } from '../../app.config'
+import {
+  metadataCacheUri,
+  allowDynamicPricing,
+  allowThingType
+} from '../../app.config'
 import addressConfig from '../../address.config'
 import { PagedAssets } from '../models/PagedAssets'
 import { SearchQuery } from '../models/aquarius/SearchQuery'
@@ -74,11 +78,16 @@ export function getWhitelistShould(): // eslint-disable-next-line camelcase
     : undefined
 }
 
-export function getDynamicPricingMustNot(): // eslint-disable-next-line camelcase
-FilterTerm | undefined {
+export function getDynamicPricingMustNot(): FilterTerm | undefined {
   return allowDynamicPricing === 'true'
     ? undefined
     : getFilterTerm('price.type', 'pool')
+}
+
+export function getThingTypeMustNot(): FilterTerm | undefined {
+  return allowThingType === 'true'
+    ? undefined
+    : getFilterTerm('service.attributes.main.type', 'thing', 'match')
 }
 
 export function generateBaseQuery(
@@ -104,6 +113,7 @@ export function generateBaseQuery(
         must_not: [
           ...(baseQueryParams.mustNot || []),
           getDynamicPricingMustNot(),
+          getThingTypeMustNot(),
           !options?.includeInvoices &&
             getFilterTerm(
               'service.attributes.additionalInformation.tags',

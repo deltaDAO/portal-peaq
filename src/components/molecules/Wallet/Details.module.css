@@ -34,12 +34,19 @@
 .bookmarksLink svg {
   width: var(--font-size-large);
   height: var(--font-size-large);
-  fill: var(--brand-purple);
+  fill: var(--color-primary);
 }
 
 .profileButton,
 .bookmarksButton {
   padding: 0;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.profileButton:hover,
+.bookmarksButton:hover {
+  color: var(--color-menu-hover);
 }
 
 .actions {
@@ -55,6 +62,7 @@
 
 .walletLogoWrap {
   display: block;
+  color: var(--font-color-text);
 }
 
 .actions p {

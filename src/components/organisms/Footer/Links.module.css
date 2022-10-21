@@ -1,9 +1,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: calc(var(--spacer) * 2);
-  width: 100%;
+  gap: var(--spacer) calc(var(--spacer) * 4);
 }
 
 .section {
@@ -14,7 +12,8 @@
   margin-bottom: calc(var(--spacer) / 2);
   text-transform: uppercase;
   font-weight: var(--font-weight-bold);
-  color: var(--color-secondary);
+  font-size: var(--font-size-base);
+  color: var(--color-footer);
 }
 
 .links {
@@ -26,23 +25,25 @@
 }
 
 .links a {
-  color: var(--brand-white);
+  color: var(--color-footer);
+  text-decoration: none;
 }
 
 .links button {
   transform: none !important;
-  color: inherit;
+  color: var(--color-footer);
   text-transform: capitalize;
   font-weight: var(--font-weight-base);
 }
 
 .links a:hover,
 .links button:hover {
-  color: var(--brand-cyan);
+  color: var(--color-footer);
 }
 
 @media screen and (min-width: 55rem) {
   .container {
     width: auto;
+    gap: calc(var(--spacer) * 6);
   }
 }

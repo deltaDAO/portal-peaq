@@ -1,9 +1,9 @@
 .sortList {
-  padding: 0 calc(var(--spacer) / 10);
+  padding: 0 calc(var(--spacer) / 2);
   display: flex;
   align-items: center;
   border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--font-color-text);
   background: var(--background-content);
   overflow-y: auto;
 }
@@ -21,7 +21,7 @@
   margin-left: calc(var(--spacer) / 2);
   margin-right: calc(var(--spacer) / 1.5);
   text-transform: uppercase;
-  color: var(--color-secondary);
+  color: var(--font-color-text);
   font-size: var(--font-size-small);
 }
 
@@ -29,7 +29,7 @@
   display: flex;
   padding: calc(var(--spacer) / 6);
   margin-right: calc(var(--spacer) / 4);
-  color: var(--color-secondary);
+  color: var(--font-color-text);
   text-transform: capitalize;
   border-radius: 0;
   font-weight: var(--font-weight-base);
@@ -40,7 +40,7 @@
 .sorted:hover,
 .sorted:focus,
 .sorted.selected {
-  color: var(--font-color-text);
+  color: var(--color-primary);
   background: inherit;
   transform: none;
   box-shadow: none;
