@@ -84,7 +84,7 @@ svg.caret {
   }
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 45rem) {
   .address {
     display: inline-block;
   }
