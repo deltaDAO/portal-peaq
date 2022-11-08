@@ -62,6 +62,7 @@ button.filter,
 }
 .showClear {
   display: inline-flex;
+  align-self: center;
   text-transform: capitalize;
   align-self: center;
   color: var(--color-primary);
