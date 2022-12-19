@@ -40,6 +40,10 @@
             {
               "name": "Log",
               "link": "https://exchangelog.minimal-gaia-x.eu"
+            },
+            {
+              "name": "GEN-X Faucet",
+              "link": "https://faucet.genx.minimal-gaia-x.eu/"
             }
           ]
         },
