@@ -6,7 +6,7 @@ import { OnboardingStep } from '..'
 import { useWeb3 } from '../../../../../providers/Web3'
 import StepBody from '../../../../organisms/Onboarding/StepBody'
 import StepHeader from '../../../../organisms/Onboarding/StepHeader'
-import { GX_NETWORK_ID } from '../../../../../../chains.config'
+import { GEN_X_NETWORK_ID } from '../../../../../../chains.config'
 import { getErrorMessage } from '../../../../../utils/onboarding'
 
 const query = graphql`
@@ -127,7 +127,7 @@ export default function ClaimTokens(): ReactElement {
   }, [getUserBalance, oceanState])
 
   const claimTokens = async (address: string, token: Tokens) => {
-    if (!accountId || networkId !== GX_NETWORK_ID) {
+    if (!accountId || networkId !== GEN_X_NETWORK_ID) {
       toast.error(
         getErrorMessage({
           accountId,
