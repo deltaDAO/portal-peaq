@@ -65,6 +65,9 @@ module.exports = {
   allowDynamicPricing: process.env.GATSBY_ALLOW_DYNAMIC_PRICING || 'false',
   allowFreePricing: process.env.GATSBY_ALLOW_FREE_PRICING || 'false',
 
+  // Used to show or hide "thing" type assets
+  allowThingType: process.env.GATSBY_ALLOW_THING_TYPE || 'false',
+
   // Used to show or hide advanced settings button in asset details page
   allowAdvancedSettings: process.env.GATSBY_ALLOW_ADVANCED_SETTINGS || 'true',
   allowAdvancedPublishSettings:

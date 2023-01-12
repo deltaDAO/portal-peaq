@@ -54,13 +54,6 @@ const homePageContentQuery = graphql`
               description
               link
               cta
-              image {
-                childImageSharp {
-                  original {
-                    src
-                  }
-                }
-              }
             }
           }
         }
@@ -87,7 +80,6 @@ interface HomeContent {
             description: string
             link: string
             cta: string
-            image: { childImageSharp: { original: { src: string } } }
           }[]
         }
       }
@@ -240,21 +232,19 @@ export default function HomePage(): ReactElement {
             className={styles.allAssetsButton}
             style="text"
             to="/search?sort=created&sortOrder=desc"
-            arrow
           >
             All data sets and algorithms
           </Button>
         </Container>
-        <Container>
-          <div>
-            {banners?.map((banner, i) => (
-              <PromotionBanner {...banner} key={i} />
-            ))}
-          </div>
-        </Container>
-        <section className={styles.intro}>
-          <HomeIntro />
-        </section>
+        <div className={styles.bannerWrapper}>
+          <Container className={styles.bannerContainer}>
+            <div>
+              {banners?.map((banner, i) => (
+                <PromotionBanner {...banner} key={i} />
+              ))}
+            </div>
+          </Container>
+        </div>
         <section className={styles.content}>
           <HomeContent />
         </section>

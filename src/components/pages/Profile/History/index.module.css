@@ -22,8 +22,8 @@
 }
 
 .tabs ul[class*='tabList'] {
-  background-color: var(--background-content);
-  border: 1px solid var(--border-color);
+  background-color: var(--color-black);
+  border: none;
   border-bottom: 0;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
@@ -33,12 +33,13 @@
 }
 
 .tabs div[class*='tabContent'] {
-  border: 1px solid var(--border-color);
+  border: none;
   padding-bottom: 0;
+  box-shadow: var(--card-shadow);
 }
 
 .tabs div[class*='tab-panel--selected'] {
-  margin-bottom: var(--spacer);
+  padding-bottom: var(--spacer);
 }
 
 .printButton {

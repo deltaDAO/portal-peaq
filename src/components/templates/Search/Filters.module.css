@@ -15,7 +15,7 @@
 }
 
 .filterType {
-  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+  grid-template-columns: repeat(2, minmax(max-content, 1fr));
 }
 
 .filter {
@@ -27,9 +27,9 @@ button.filter,
 .filter:hover,
 .filter:active,
 .filter:focus {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--font-color-text);
   border-radius: var(--border-radius);
-  color: var(--color-secondary);
+  color: var(--font-color-text);
   background: var(--background-content);
   min-width: 7rem;
 
@@ -62,9 +62,10 @@ button.filter,
 }
 .showClear {
   display: inline-flex;
+  align-self: center;
   text-transform: capitalize;
   align-self: center;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: var(--font-weight-base);
 }
 

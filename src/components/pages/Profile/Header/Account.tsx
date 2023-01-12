@@ -57,7 +57,7 @@ export default function Account({
                 path={`address/${accountId}`}
                 key={value}
               >
-                <NetworkName networkId={value} />
+                <NetworkName networkId={value} className={styles.networkName} />
               </ExplorerLink>
             ))}
         </p>

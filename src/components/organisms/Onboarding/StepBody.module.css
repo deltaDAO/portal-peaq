@@ -47,7 +47,8 @@
 }
 
 .refresh svg {
-  fill: var(--brand-pink);
+  fill: var(--color-primary);
+  margin: auto;
 }
 
 @media screen and (min-width: 60rem) {

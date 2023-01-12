@@ -59,8 +59,14 @@
 .explorer svg:first-child {
   width: var(--font-size-mini);
   height: var(--font-size-mini);
+  fill: var(--color-secondary);
 }
 
 .explorer svg:last-child {
   margin-left: calc(var(--spacer) / 12);
+  fill: var(--color-secondary);
+}
+
+.networkName {
+  color: var(--color-secondary);
 }

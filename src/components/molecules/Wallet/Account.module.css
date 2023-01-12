@@ -3,11 +3,11 @@
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-small);
-  border: var(--border-size) solid var(--border-color-menu);
+  border: none;
   border-radius: var(--border-radius-menu);
   padding: calc(var(--spacer) / 6) calc(var(--spacer) / 2);
   white-space: nowrap;
-  background: var(--background-content);
+  background: none;
   margin: 0;
   transition: border 0.2s ease-out;
   cursor: pointer;
@@ -16,14 +16,24 @@
   align-items: center;
 }
 
+.button:hover .address {
+  color: var(--brand-white);
+  border-color: var(--brand-white);
+}
+
+.button:hover .caret,
+.button:hover svg.caret {
+  fill: var(--brand-white);
+}
+
 .button,
 .address {
-  color: var(--color-primary);
+  color: var(--color-menu);
   z-index: 1;
 }
 
 .button.initial {
-  color: var(--color-primary);
+  color: var(--color-menu);
 }
 
 .button.initial span {
@@ -33,7 +43,7 @@
 .address {
   display: none;
   text-transform: none;
-  border-right: 2px solid var(--border-color-menu);
+  border-right: 2px solid var(--color-menu);
   padding-right: calc(var(--spacer) / 3);
   padding-left: calc(var(--spacer) / 8);
 }
@@ -41,7 +51,7 @@
 .button svg {
   width: 1em;
   height: 1em;
-  fill: var(--border-color);
+  fill: var(--color-menu);
   display: inline-block;
   vertical-align: middle;
   margin-left: calc(var(--spacer) / 3);
@@ -70,11 +80,11 @@ svg.caret {
   .caret,
   svg.caret {
     display: inline-block;
-    fill: var(--color-primary);
+    fill: var(--color-menu);
   }
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 45rem) {
   .address {
     display: inline-block;
   }

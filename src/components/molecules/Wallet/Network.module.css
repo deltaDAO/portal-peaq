@@ -1,5 +1,5 @@
 .network {
-  border: var(--border-size) solid var(--border-color-menu);
+  border: none;
   border-right: none;
   border-top-left-radius: var(--border-radius-menu);
   border-bottom-left-radius: var(--border-radius-menu);
@@ -16,10 +16,18 @@
 
 .badge {
   margin-left: calc(var(--spacer) / 8);
-  background-color: var(--border-color);
-  color: var(--font-color-text);
+  background-color: var(--color-menu);
+  color: var(--color-black);
 }
 
 .warning {
   margin-right: calc(var(--spacer) / 4);
+}
+
+.network:hover .name {
+  color: var(--brand-white);
+}
+
+.network:hover .badge {
+  background-color: var(--brand-white);
 }
