@@ -24,16 +24,14 @@
   text-transform: capitalize;
 }
 
-.links a {
-  color: var(--color-footer);
-  text-decoration: none;
-}
-
+.links a,
 .links button {
   transform: none !important;
   color: var(--color-footer);
+  text-decoration: none;
   text-transform: capitalize;
   font-weight: var(--font-weight-base);
+  font-size: var(--font-size-small);
 }
 
 .links a:hover,
